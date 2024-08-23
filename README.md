@@ -1,10 +1,6 @@
-- 👋 Hi, I’m @tanvirome
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-tanvirome/tanvirome is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<h2 align="center">🌟 Hola, I'm Tausif! 🚀</h2>
+<p align="center">
+ <a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=js,nodejs,py,ts,nextjs,react,prisma,tailwind,mysql, mongodb" />
+ </a>
+</p>
