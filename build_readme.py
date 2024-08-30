@@ -3,7 +3,7 @@ import datetime
 def generate_readme():
     # Customize the content of your README
     readme_content = f"""
-    # Hello, I'm {YOUR_NAME}
+    # Hello, I'm Tanvir Ome! 👋
 
     Welcome to my GitHub profile! Here's a summary of my recent activity.
 
