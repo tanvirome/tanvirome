@@ -30,8 +30,7 @@ jobs:
       - name: Build README
         run: |
           python --version
-          # python build_readme.py
-          python generate_images.py
+          python build_readme.py
           # cat README.md
         env:
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
