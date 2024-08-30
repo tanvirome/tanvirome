@@ -1,4 +1,5 @@
 import datetime
+from github_readme_builder.build_readme import build_readme
 
 def write_to_readme(readme_content):
   with open("README.md", "w") as readme_file:
@@ -22,4 +23,4 @@ def generate_readme():
   write_to_readme(readme_content)
 
 if __name__ == "__main__":
-  generate_readme()
+  build_readme()
