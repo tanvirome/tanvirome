@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - setup-readme-v2
+      - setup-readme-v3
   # Run every 6 hours
   schedule:
     - cron:  '0 */6 * * *'
