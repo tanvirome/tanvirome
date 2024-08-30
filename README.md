@@ -27,8 +27,9 @@ const thai = {
   </a>
 </p>
 
+
 🔗 &nbsp;**Connect with me**
-<p align="left"></p>
+
 [![Tanvir Ome](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/tanvirome)
 [![Tanvir Ome](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/tanvir.ome)
 
