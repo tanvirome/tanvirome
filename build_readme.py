@@ -1,5 +1,5 @@
 import datetime
-from github_readme_builder.build_readme import build_readme
+# from github_readme_builder.build_readme import build_readme
 from github_readme_builder_v2.generate_images import generate_images
 import asyncio
 
