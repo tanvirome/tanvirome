@@ -1,13 +1,8 @@
+[![160744959694494596](https://user-images.githubusercontent.com/6764957/101521273-94ed0f00-39c0-11eb-9721-1fb49097a171.png)](https://github.com/sw-yx?tab=repositories)
 
-  # Hello, I'm Tanvir Ome! 👋
+# Hello, I'm Tanvir Ome! 👋
 
-  Welcome to my GitHub profile! Here's a summary of my recent activity.
+Welcome to my GitHub profile! Here's a summary of my recent activity.
 
-  ## Current Date and Time
-  2024-08-30 06:14:07.669319
-
-  ## Other Information
-  - 🔭 I’m currently working on: [Your Project](https://github.com/your-repo)
-  - 🌱 I’m currently learning: Python, GitHub Actions
-  - 💬 Ask me about: Anything
-  
+![Github Stat Overview](https://github.com/tanvirome/tanvirome/blob/master/github_readme_builder/images/github_stat_card.svg)
+![Github Languages Overview](https://github.com/tanvirome/tanvirome/blob/master/github_readme_builder/images/github_languages_card.svg)

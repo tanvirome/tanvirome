@@ -25,8 +25,8 @@ def replace_string_template(input_str, name, value):
 def replace_language_template(input_str, repositories):
 	r_start = build_regex(TPL_STR.LANGUAGE_TEMPLATE_START, True)
 	r_end = build_regex(TPL_STR.LANGUAGE_TEMPLATE_END, True)
-
 	replacements = []
+	
 	for match in re.finditer(r_start, input_str):
 		opts = match.group('opts')
 		max_langs = int(get_opts_map(opts).get('max', 8)) if opts else 8
