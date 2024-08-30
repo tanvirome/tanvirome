@@ -3,7 +3,7 @@ name: Build README
 on:
   push:
     branches:
-      - master
+      - main
       - setup-readme-v3
   # Run every 6 hours
   schedule:

@@ -2,13 +2,13 @@
 
 <h2 align="center">Hello, I'm Tanvir Ome! 👋</h2>
 
-<p><em>Software Engineer at <a href="https://streamstech.com">Streams Tech, Inc</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></em></p>
+<p><em>Software Engineer at <a href="https://streamstech.com">Streams Tech, Inc </a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></em></p>
 
 
-![Github Stat Overview](https://github.com/tanvirome/tanvirome/blob/master/github_readme_builder/images/github_stat_card.svg)
-![Github Languages Overview](https://github.com/tanvirome/tanvirome/blob/master/github_readme_builder/images/github_languages_card.svg)
+![Github Stat Overview](https://github.com/tanvirome/tanvirome/blob/main/github_readme_builder/images/github_stat_card.svg)
+![Github Languages Overview](https://github.com/tanvirome/tanvirome/blob/main/github_readme_builder/images/github_languages_card.svg)
 
-### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...
 
 ```javascript
 const thai = {
@@ -28,7 +28,9 @@ const thai = {
 </p>
 
 🔗 &nbsp;**Connect with me**
-[![Tanvir Ome](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/tanvirome)
-[![Tanvir Ome](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/tanvir.ome)
+<p>
+  [![Tanvir Ome](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/tanvirome)
+  [![Tanvir Ome](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/tanvir.ome)
+</p>
 
 ---
