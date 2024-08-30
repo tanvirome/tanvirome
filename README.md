@@ -22,15 +22,14 @@ const thai = {
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>
 
 <p align="center">
-  <a href="https://skillicons.dev">
+  <a href="https://github.com/tanvirome">
     <img src="https://skillicons.dev/icons?i=dotnet,angular,cs,ts,mongodb,mysql,postgres,git,kubernetes,docker,aws,azure,vim,docker,postman,rabbitmq,redis,regex,sass" />
   </a>
 </p>
 
 🔗 &nbsp;**Connect with me**
-<p>
-  [![Tanvir Ome](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/tanvirome)
-  [![Tanvir Ome](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/tanvir.ome)
-</p>
+<p align="left"></p>
+[![Tanvir Ome](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/tanvirome)
+[![Tanvir Ome](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/tanvir.ome)
 
 ---
