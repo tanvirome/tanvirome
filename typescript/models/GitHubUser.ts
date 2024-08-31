@@ -6,6 +6,6 @@ export class GitHubUser {
     public prCount: number,
     public commitCount: number,
     public forkedCount: number,
-    public totalRepositories: number
+    public totalRepositories: number,
   ) {}
 }

@@ -1,26 +1,15 @@
 import axios from 'axios';
 import { IGitHubClient } from '../interfaces/IGitHubClient';
-import {
-  GitHubGraphQLResponse,
-  GitHubUserResponse,
-} from '../models/GitHubGraphQLResponse';
+import { GitHubGraphQLResponse, GitHubUserResponse } from '../models/GitHubGraphQLResponse';
 import * as fs from 'fs';
 
-export class GitHubClient
-  implements
-    IGitHubClient
-{
-  private readonly apiUrl: string =
-    'https://api.github.com/graphql';
+export class GitHubClient implements IGitHubClient {
+  private readonly apiUrl: string = 'https://api.github.com/graphql';
   private readonly token: string;
-  private readonly outputFilePath: string =
-    './githubResponse.json';
+  private readonly outputFilePath: string = './githubResponse.json';
 
-  constructor(
-    token: string
-  ) {
-    this.token =
-      token;
+  constructor(token: string) {
+    this.token = token;
   }
 
   async fetchUserDetails(): Promise<GitHubUserResponse> {
@@ -109,55 +98,30 @@ export class GitHubClient
     let response;
 
     try {
-      response =
-        await axios.post<GitHubGraphQLResponse>(
-          this
-            .apiUrl,
-          {
-            query,
+      response = await axios.post<GitHubGraphQLResponse>(
+        this.apiUrl,
+        {
+          query,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${this.token}`,
+            'Content-Type': 'application/json',
           },
-          {
-            headers:
-              {
-                Authorization: `Bearer ${this.token}`,
-                'Content-Type':
-                  'application/json',
-              },
-          }
-        );
-    } catch (error) {
-      console.error(
-        'Error fetching user details:',
-        error
+        },
       );
+    } catch (error) {
+      console.error('Error fetching user details:', error);
     }
 
     // Save the entire response.data to a JSON file
-    this.saveResponseToFile(
-      response?.data as GitHubGraphQLResponse
-    );
+    this.saveResponseToFile(response?.data as GitHubGraphQLResponse);
 
-    return response
-      ?.data
-      .data
-      .viewer as GitHubUserResponse;
+    return response?.data.data.viewer as GitHubUserResponse;
   }
 
-  private saveResponseToFile(
-    data: GitHubGraphQLResponse
-  ): void {
-    fs.writeFileSync(
-      this
-        .outputFilePath,
-      JSON.stringify(
-        data,
-        null,
-        2
-      ),
-      'utf-8'
-    );
-    console.log(
-      `Response data saved to ${this.outputFilePath}`
-    );
+  private saveResponseToFile(data: GitHubGraphQLResponse): void {
+    fs.writeFileSync(this.outputFilePath, JSON.stringify(data, null, 2), 'utf-8');
+    console.log(`Response data saved to ${this.outputFilePath}`);
   }
 }
