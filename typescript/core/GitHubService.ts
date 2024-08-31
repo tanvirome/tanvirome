@@ -1,9 +1,8 @@
-import { IGitHubService } from '../interfaces/IGitHubService';
 import { GitHubClient } from './GitHubClient';
 import { GitHubUser } from '../models/GitHubUser';
-import { GitHubGraphQLResponse, Repository, RepositoryEdge } from '../models/GitHubGraphQLResponse';
+import { RepositoryEdge } from '../interfaces/GitHubGraphQLResponse';
 
-export class GitHubService implements IGitHubService {
+export class GitHubService {
   private client: GitHubClient;
 
   constructor(client: GitHubClient) {

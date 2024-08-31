@@ -1,9 +1,8 @@
 import axios from 'axios';
-import { IGitHubClient } from '../interfaces/IGitHubClient';
-import { GitHubGraphQLResponse, GitHubUserResponse } from '../models/GitHubGraphQLResponse';
+import { GitHubGraphQLResponse, GitHubUserResponse } from '../interfaces/GitHubGraphQLResponse';
 import * as fs from 'fs';
 
-export class GitHubClient implements IGitHubClient {
+export class GitHubClient {
   private readonly apiUrl: string = 'https://api.github.com/graphql';
   private readonly token: string;
   private readonly outputFilePath: string = './githubResponse.json';
@@ -113,9 +112,6 @@ export class GitHubClient implements IGitHubClient {
     } catch (error) {
       console.error('Error fetching user details:', error);
     }
-
-    // Save the entire response.data to a JSON file
-    this.saveResponseToFile(response?.data as GitHubGraphQLResponse);
 
     return response?.data.data.viewer as GitHubUserResponse;
   }
