@@ -1,18 +1,23 @@
 import { GitHubClient } from './GitHubClient';
 import { GitHubUser } from '../models/GitHubUser';
-import { RepositoryEdge } from '../interfaces/GitHubGraphQLResponse';
+import { GitHubUserResponse, RepositoryEdge } from '../interfaces/GitHubGraphQLResponse';
 
 export class GitHubService {
   private client: GitHubClient;
+  private userDetails: GitHubUserResponse | undefined;
 
   constructor(client: GitHubClient) {
     this.client = client;
   }
 
-  async getUserDetails(): Promise<GitHubUser> {
+  async fetchAndSetUserDetails(): Promise<void> {
     const githubUserData = await this.client.fetchUserDetails();
 
-    console.log(githubUserData);
+    if (!githubUserData) {
+      return;
+    }
+
+    this.userDetails = githubUserData;
 
     const forkedCount = githubUserData.repositories.edges.reduce(
       (acc: number, repo: RepositoryEdge) => acc + repo.node.forkCount,
@@ -29,7 +34,5 @@ export class GitHubService {
       forkedCount,
       githubUserData.repositories.totalCount,
     );
-
-    return user;
   }
 }

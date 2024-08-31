@@ -12,8 +12,7 @@ import { GitHubClient } from './typescript/core/GitHubClient';
   const service = new GitHubService(client);
 
   try {
-    const userDetails = await service.getUserDetails();
-    console.log(userDetails);
+    await service.fetchAndSetUserDetails();
   } catch (error) {
     console.error('Error fetching user details:', error);
   }

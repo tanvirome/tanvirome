@@ -11,7 +11,7 @@ export class GitHubClient {
     this.token = token;
   }
 
-  async fetchUserDetails(): Promise<GitHubUserResponse> {
+  async fetchUserDetails(): Promise<GitHubUserResponse | undefined> {
     const query = `
         query {
           viewer {
@@ -113,7 +113,7 @@ export class GitHubClient {
       console.error('Error fetching user details:', error);
     }
 
-    return response?.data.data.viewer as GitHubUserResponse;
+    return response?.data.data.viewer;
   }
 
   private saveResponseToFile(data: GitHubGraphQLResponse): void {
