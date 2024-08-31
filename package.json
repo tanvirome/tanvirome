@@ -1,0 +1,18 @@
+{
+  "name": "tanvirome",
+  "version": "1.0.0",
+  "description": "<!-- [![160744959694494596](https://user-images.githubusercontent.com/6764957/101521273-94ed0f00-39c0-11eb-9721-1fb49097a171.png)](https://github.com/sw-yx?tab=repositories) -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "22.5.1",
+    "axios": "1.7.6",
+    "ts-node": "10.9.2",
+    "typescript": "5.5.4"
+  }
+}
