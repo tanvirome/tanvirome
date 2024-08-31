@@ -2,7 +2,7 @@ import { GitHubService } from './typescript/core/GitHubService';
 import { GitHubClient } from './typescript/core/GitHubClient';
 
 (async () => {
-  const token = process.env.GITHUB_TOKEN; // Set your token in environment variable
+  const token = process.env.ACCESS_TOKEN; // Set your token in environment variable
 
   if (!token) {
     throw new Error('GitHub Access Token is required');
