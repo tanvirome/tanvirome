@@ -4,6 +4,12 @@ export interface GitHubGraphQLResponse {
   };
 }
 
+export interface GitHubGraphQLContributionsResponse {
+  data: {
+    viewer: GitHubContributionsResponse;
+  };
+}
+
 export interface GitHubUserResponse {
   login: string;
   name: string;
@@ -17,8 +23,17 @@ export interface GitHubUserResponse {
   repositoriesContributedTo: RepositoryConnection;
 }
 
+export interface GitHubContributionsResponse {
+  [contributionYear: string]: ContributionsCollection;
+}
+
 export interface ContributionsCollection {
   contributionYears: number[];
+  totalCommitContributions: number;
+  totalPullRequestContributions: number;
+  totalPullRequestReviewContributions: number;
+  totalIssueContributions: number;
+  totalRepositoryContributions: number;
 }
 
 export interface TotalCount {

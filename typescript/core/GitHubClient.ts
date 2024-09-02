@@ -1,11 +1,19 @@
 import axios from 'axios';
-import { GitHubGraphQLResponse, GitHubUserResponse } from '../interfaces/GitHubGraphQLResponse';
-import * as fs from 'fs';
+import {
+  GitHubContributionsResponse,
+  GitHubGraphQLContributionsResponse,
+  GitHubGraphQLResponse,
+  GitHubUserResponse,
+} from '../interfaces/GitHubGraphQLResponse';
+import {
+  GitHubRepoContributorActivityResponse,
+  GitHubRepoViewTrafficResponse,
+} from '../interfaces/git-hub-rest-api-response';
 
 export class GitHubClient {
-  private readonly apiUrl: string = 'https://api.github.com/graphql';
+  private readonly graphQLApiUrl: string = 'https://api.github.com/graphql';
+  private readonly restApiUrl: string = 'https://api.github.com';
   private readonly token: string;
-  private readonly outputFilePath: string = './githubResponse.json';
 
   constructor(token: string) {
     this.token = token;
@@ -31,7 +39,7 @@ export class GitHubClient {
             pullRequests {
               totalCount
             }
-            repositories(first: 100, isFork: false) {
+            repositories(affiliations: OWNER, first: 100, isFork: false) {
               totalCount
               totalDiskUsage
               edges {
@@ -93,12 +101,48 @@ export class GitHubClient {
           }
         }
     `;
+    const errorMessage = 'Error fetching user details: ';
 
+    const response = await this.callGraphQLApi<GitHubGraphQLResponse>(query, errorMessage);
+
+    return response?.data.viewer;
+  }
+
+  async fetchContributionsByYears(years: number[]): Promise<GitHubContributionsResponse | undefined> {
+    const query = this.getContributionsByYearsQuery(years);
+    const errorMessage = 'Error fetching contributions by years: ';
+
+    const response = await this.callGraphQLApi<GitHubGraphQLContributionsResponse>(query, errorMessage);
+
+    return response?.data.viewer;
+  }
+
+  async fetchRepoContributorActivity(
+    owner: string,
+    repo: string,
+  ): Promise<GitHubRepoContributorActivityResponse[] | undefined> {
+    const apiUrl = `${this.restApiUrl}/repos/${owner}/${repo}/stats/contributors`;
+    const errorMessage = 'Error fetching repo contributor activity: ';
+
+    return await this.callRestApi<GitHubRepoContributorActivityResponse[]>(apiUrl, errorMessage);
+  }
+
+  async fetchRepoViewTraffic(owner: string, repo: string): Promise<GitHubRepoViewTrafficResponse | undefined> {
+    const apiUrl = `${this.restApiUrl}/repos/${owner}/${repo}/traffic/views`;
+    const errorMessage = 'Error fetching repo view traffic: ';
+
+    return await this.callRestApi<GitHubRepoViewTrafficResponse>(apiUrl, errorMessage);
+  }
+
+  private async callGraphQLApi<ResponseModel>(
+    query: string,
+    errorMessage: string = '',
+  ): Promise<ResponseModel | undefined> {
     let response;
 
     try {
-      response = await axios.post<GitHubGraphQLResponse>(
-        this.apiUrl,
+      response = await axios.post<ResponseModel>(
+        this.graphQLApiUrl,
         {
           query,
         },
@@ -110,14 +154,65 @@ export class GitHubClient {
         },
       );
     } catch (error) {
-      console.error('Error fetching user details:', error);
+      console.error(errorMessage, error);
     }
 
-    return response?.data.data.viewer;
+    return response?.data;
   }
 
-  private saveResponseToFile(data: GitHubGraphQLResponse): void {
-    fs.writeFileSync(this.outputFilePath, JSON.stringify(data, null, 2), 'utf-8');
-    console.log(`Response data saved to ${this.outputFilePath}`);
+  private async callRestApi<ResponseModel>(
+    apiUrl: string,
+    errorMessage: string = '',
+  ): Promise<ResponseModel | undefined> {
+    let response;
+
+    for (let i = 0; i < 5; i++) {
+      try {
+        response = await axios.get<ResponseModel>(apiUrl, {
+          headers: {
+            Authorization: `Bearer ${this.token}`,
+            'Content-Type': 'application/json',
+            'X-GitHub-Api-Version': '2022-11-28',
+            Accept: 'application/vnd.github+json',
+          },
+        });
+
+        if (response.status === 202) {
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          continue;
+        }
+
+        break;
+      } catch (error) {
+        console.error(`(${i}) ${errorMessage}`, error);
+        continue;
+      }
+    }
+
+    return response?.data;
+  }
+
+  private getContributionsByYearsQuery(years: number[]): string {
+    const byYearsQuery = years
+      .map(
+        year => `
+        __${year}: contributionsCollection(from: "${year}-01-01T00:00:00Z") {
+          totalCommitContributions
+          totalPullRequestContributions
+          totalPullRequestReviewContributions
+          totalIssueContributions
+          totalRepositoryContributions
+        }
+      `,
+      )
+      .join('\n');
+
+    return `
+      query {
+        viewer {
+          ${byYearsQuery}
+        }
+      }
+    `;
   }
 }
