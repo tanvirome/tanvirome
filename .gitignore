@@ -1,5 +1,6 @@
 .DS_Store
 /.git_profile_virtual_env
+.git_profile_virtual_env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
