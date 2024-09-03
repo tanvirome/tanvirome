@@ -34,8 +34,8 @@ export class GenerateGitHubCardsService {
     // Paths to the input SVG file and the output file
     // const inputSVGPath = path.resolve('images/github_stats_card_template.svg');
     // const outputSVGPath = path.resolve('images/github_stats_card.svg');
-    const inputSVGPath = 'images/github_stats_card_template.svg';
-    const outputSVGPath = 'images/github_stats_card.svg';
+    const inputSVGPath = '../../images/github_stats_card_template.svg';
+    const outputSVGPath = '../../images/github_stats_card.svg';
 
     const svgProcessor = new SVGProcessor();
     await svgProcessor.processSVG(inputSVGPath, outputSVGPath, templateValues);
@@ -45,8 +45,8 @@ export class GenerateGitHubCardsService {
     // Paths to the input SVG file and the output file
     // const inputSVGPath = path.resolve('images/github_languages_card_template.svg');
     // const outputSVGPath = path.resolve('images/github_languages_card.svg');
-    const inputSVGPath = 'images/github_languages_card_template.svg';
-    const outputSVGPath = 'images/github_languages_card.svg';
+    const inputSVGPath = '../../images/github_languages_card_template.svg';
+    const outputSVGPath = '../../images/github_languages_card.svg';
     const languages = this.githubService.getLanguages();
     const animationDelay = 100;
     const svgProcessor = new SVGProcessor();
