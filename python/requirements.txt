@@ -1,5 +1,0 @@
-requests
-imgurpython
-datetime
-pillow
-aiohttp
