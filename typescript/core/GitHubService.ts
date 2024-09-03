@@ -32,10 +32,6 @@ export class GitHubService {
     this.client = client;
   }
 
-  get gitHubUserDetails(): GitHubUserResponse | undefined {
-    return this.userDetails;
-  }
-
   async fetchAndSetUserDetails(): Promise<void> {
     const githubUserData = await this.client.fetchUserDetails();
 
@@ -71,6 +67,10 @@ export class GitHubService {
       prCount: userDetails.pullRequests.totalCount.toString(),
       commitCount: this.totalCommitContributions.toString(),
     };
+  }
+
+  getLanguages(): GitHubLanguageDto[] {
+    return Object.values(this.languagesDict).sort((a, b) => b.size - a.size);
   }
 
   private async processGraphQLResponse(): Promise<void> {
