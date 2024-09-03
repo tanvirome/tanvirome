@@ -27,7 +27,7 @@ jobs:
 
       - name: Build README
         run: |
-          npx ts-node src/index.ts
+          npx ts-node typescript/index.ts
         env:
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
