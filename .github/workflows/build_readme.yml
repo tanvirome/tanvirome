@@ -13,11 +13,11 @@ jobs:
   build-readme:
     runs-on: ubuntu-latest
 
-    strategy:
-      fail-fast: false
-      max-parallel: 1
-      matrix:
-        attempt: [1, 2] # Attempt twice if failed
+    # strategy:
+    #   fail-fast: false
+    #   max-parallel: 1
+    #   matrix:
+    #     attempt: [1, 2] # Attempt twice if failed
 
     steps:
       - name: Check out repository
@@ -48,8 +48,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Retry logic
-        if: ${{ matrix.attempt == 2 && failure() }}
-        run: echo "This is a retry after the first failure."
+    #   - name: Retry logic
+    #     if: ${{ matrix.attempt == 2 && failure() }}
+    #     run: echo "This is a retry after the first failure."
 
-    continue-on-error: ${{ matrix.attempt == 1 }}
+    # continue-on-error: ${{ matrix.attempt == 1 }}
