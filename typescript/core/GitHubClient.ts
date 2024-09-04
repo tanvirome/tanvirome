@@ -177,12 +177,12 @@ export class GitHubClient {
           },
         });
 
-        if (response.status === 202) {
-          await new Promise(resolve => setTimeout(resolve, 1000));
-          continue;
+        if (response.status === 200) {
+          break;
         }
 
-        break;
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        continue;
       } catch (error) {
         console.error(`(${i}) ${errorMessage}`, error);
         continue;
