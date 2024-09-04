@@ -154,12 +154,15 @@ export class GitHubService {
   }
 
   private async getAndSetLinesChangedInformation(repo: Repository): Promise<void> {
-    const repoContributorActivity = await this.client.fetchRepoContributorActivity(
-      this.userDetails?.login || 'tanvirome',
-      repo.name,
-    );
+    const repoContributorActivity =
+      (await this.client.fetchRepoContributorActivity(this.userDetails?.login || 'tanvirome', repo.name)) || [];
 
-    if (!repoContributorActivity) {
+    if (
+      repoContributorActivity === undefined ||
+      repoContributorActivity === null ||
+      !Array.isArray(repoContributorActivity) ||
+      repoContributorActivity.length === 0
+    ) {
       return;
     }
 
