@@ -4,9 +4,8 @@
 
 <p><em>Software Engineer at <a href="https://streamstech.com">Streams Tech, Inc </a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></em></p>
 
-
-![Github Stat Overview](https://github.com/tanvirome/tanvirome/blob/main/github_readme_builder/images/github_stat_card.svg)
-![Github Languages Overview](https://github.com/tanvirome/tanvirome/blob/main/github_readme_builder/images/github_languages_card.svg)
+![Github Stat Overview](https://github.com/tanvirome/tanvirome/blob/main/Images/github_stats_card.svg)
+![Github Languages Overview](https://github.com/tanvirome/tanvirome/blob/main/Images/github_languages_card.svg)
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...
 
@@ -20,13 +19,11 @@ const thai = {
 }
 ```
 
-
 <p align="center">
   <a href="https://github.com/tanvirome">
     <img src="https://skillicons.dev/icons?i=dotnet,angular,cs,ts,mongodb,mysql,postgres,git,kubernetes,docker,aws,azure,vim,docker,postman,rabbitmq,redis,regex,sass" />
   </a>
 </p>
-
 
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>
 
