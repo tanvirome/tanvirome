@@ -5,12 +5,12 @@
 <p><em>Software Engineer at <a href="https://streamstech.com">Streams Tech, Inc </a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></em></p>
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-  <img src="./Images/github_stats_card.svg" alt="Github Stat Overview" style="width: 48%; flex-grow: 1;">
-  <img src="./Images/github_languages_card.svg" alt="Github Languages Overview" style="width: 48%; flex-grow: 1;">
+  <img src="./images/github_stats_card.svg" alt="Github Stat Overview" style="width: 48%; flex-grow: 1;">
+  <img src="./images/github_languages_card.svg" alt="Github Languages Overview" style="width: 48%; flex-grow: 1;">
 </div>
 
-<!-- ![Github Stat Overview](https://github.com/tanvirome/tanvirome/blob/main/Images/github_stats_card.svg) -->
-<!-- ![Github Languages Overview](https://github.com/tanvirome/tanvirome/blob/main/Images/github_languages_card.svg) -->
+<!-- ![Github Stat Overview](https://github.com/tanvirome/tanvirome/blob/main/images/github_stats_card.svg) -->
+<!-- ![Github Languages Overview](https://github.com/tanvirome/tanvirome/blob/main/images/github_languages_card.svg) -->
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...
 
