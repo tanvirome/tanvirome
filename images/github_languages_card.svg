@@ -103,17 +103,17 @@
           <div>
             <span class="progress">
               
-              <span style="background-color: #178600; width:61.81%;" class="progress-item"></span>
+              <span style="background-color: #178600; width:61.78%;" class="progress-item"></span>
   
-              <span style="background-color: #3178c6; width:14.51%;" class="progress-item"></span>
+              <span style="background-color: #3178c6; width:14.53%;" class="progress-item"></span>
   
-              <span style="background-color: #5B2063; width:8.35%;" class="progress-item"></span>
+              <span style="background-color: #5B2063; width:8.34%;" class="progress-item"></span>
   
               <span style="background-color: #f1e05a; width:4.54%;" class="progress-item"></span>
   
               <span style="background-color: #3572A5; width:3.19%;" class="progress-item"></span>
   
-              <span style="background-color: #e34c26; width:2.78%;" class="progress-item"></span>
+              <span style="background-color: #e34c26; width:2.79%;" class="progress-item"></span>
   
               <span style="background-color: #663399; width:2.50%;" class="progress-item"></span>
   
@@ -157,7 +157,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">C#</span>
-              <span class="language-percent">61.81%</span>
+              <span class="language-percent">61.78%</span>
             </li>
   
             <li style="animation-delay: 200ms;">
@@ -165,7 +165,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">TypeScript</span>
-              <span class="language-percent">14.51%</span>
+              <span class="language-percent">14.53%</span>
             </li>
   
             <li style="animation-delay: 300ms;">
@@ -173,7 +173,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">Gherkin</span>
-              <span class="language-percent">8.35%</span>
+              <span class="language-percent">8.34%</span>
             </li>
   
             <li style="animation-delay: 400ms;">
@@ -197,7 +197,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">HTML</span>
-              <span class="language-percent">2.78%</span>
+              <span class="language-percent">2.79%</span>
             </li>
   
             <li style="animation-delay: 700ms;">
