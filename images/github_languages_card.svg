@@ -103,7 +103,7 @@
           <div>
             <span class="progress">
               
-              <span style="background-color: #178600; width:61.07%;" class="progress-item"></span>
+              <span style="background-color: #178600; width:61.09%;" class="progress-item"></span>
   
               <span style="background-color: #3178c6; width:14.59%;" class="progress-item"></span>
   
@@ -157,7 +157,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">C#</span>
-              <span class="language-percent">61.07%</span>
+              <span class="language-percent">61.09%</span>
             </li>
   
             <li style="animation-delay: 200ms;">
