@@ -103,7 +103,7 @@
           <div>
             <span class="progress">
               
-              <span style="background-color: #178600; width:60.86%;" class="progress-item"></span>
+              <span style="background-color: #7355dd; width:60.86%;" class="progress-item"></span>
   
               <span style="background-color: #3178c6; width:14.69%;" class="progress-item"></span>
   
@@ -153,7 +153,7 @@
           <ul>
             
             <li style="animation-delay: 100ms;">
-              <svg xmlns="http://www.w3.org/2000/svg" class="language-item" style="fill:#178600;" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+              <svg xmlns="http://www.w3.org/2000/svg" class="language-item" style="fill:#7355dd;" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">C#</span>
