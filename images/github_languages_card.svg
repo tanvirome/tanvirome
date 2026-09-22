@@ -103,9 +103,9 @@
           <div>
             <span class="progress">
               
-              <span style="background-color: #7355dd; width:60.43%;" class="progress-item"></span>
+              <span style="background-color: #7355dd; width:60.42%;" class="progress-item"></span>
   
-              <span style="background-color: #3178c6; width:15.09%;" class="progress-item"></span>
+              <span style="background-color: #3178c6; width:15.10%;" class="progress-item"></span>
   
               <span style="background-color: #5B2063; width:8.02%;" class="progress-item"></span>
   
@@ -115,7 +115,7 @@
   
               <span style="background-color: #3572A5; width:3.07%;" class="progress-item"></span>
   
-              <span style="background-color: #663399; width:2.81%;" class="progress-item"></span>
+              <span style="background-color: #663399; width:2.82%;" class="progress-item"></span>
   
               <span style="background-color: #4F5D95; width:0.93%;" class="progress-item"></span>
   
@@ -161,7 +161,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">C#</span>
-              <span class="language-percent">60.43%</span>
+              <span class="language-percent">60.42%</span>
             </li>
   
             <li style="animation-delay: 200ms;">
@@ -169,7 +169,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">TypeScript</span>
-              <span class="language-percent">15.09%</span>
+              <span class="language-percent">15.10%</span>
             </li>
   
             <li style="animation-delay: 300ms;">
@@ -209,7 +209,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">CSS</span>
-              <span class="language-percent">2.81%</span>
+              <span class="language-percent">2.82%</span>
             </li>
   
             <li style="animation-delay: 800ms;">
