@@ -103,17 +103,17 @@
           <div>
             <span class="progress">
               
-              <span style="background-color: #7355dd; width:58.66%;" class="progress-item"></span>
+              <span style="background-color: #7355dd; width:58.64%;" class="progress-item"></span>
   
-              <span style="background-color: #3178c6; width:17.73%;" class="progress-item"></span>
+              <span style="background-color: #3178c6; width:17.71%;" class="progress-item"></span>
   
-              <span style="background-color: #5B2063; width:7.67%;" class="progress-item"></span>
+              <span style="background-color: #5B2063; width:7.66%;" class="progress-item"></span>
   
               <span style="background-color: #f1e05a; width:4.39%;" class="progress-item"></span>
   
-              <span style="background-color: #e34c26; width:3.09%;" class="progress-item"></span>
+              <span style="background-color: #e34c26; width:3.08%;" class="progress-item"></span>
   
-              <span style="background-color: #3572A5; width:2.93%;" class="progress-item"></span>
+              <span style="background-color: #3572A5; width:2.94%;" class="progress-item"></span>
   
               <span style="background-color: #663399; width:2.70%;" class="progress-item"></span>
   
@@ -125,7 +125,7 @@
   
               <span style="background-color: #e38c00; width:0.25%;" class="progress-item"></span>
   
-              <span style="background-color: #89e051; width:0.19%;" class="progress-item"></span>
+              <span style="background-color: #89e051; width:0.22%;" class="progress-item"></span>
   
               <span style="background-color: #dea584; width:0.13%;" class="progress-item"></span>
   
@@ -147,6 +147,8 @@
   
               <span style="background-color: #7e858d; width:0.00%;" class="progress-item"></span>
   
+              <span style="background-color: #a52a22; width:0.00%;" class="progress-item"></span>
+  
               <span style="background-color: #6a40fd; width:0.00%;" class="progress-item"></span>
   
               <span style="background-color: #C1F12E; width:0.00%;" class="progress-item"></span>
@@ -163,7 +165,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">C#</span>
-              <span class="language-percent">58.66%</span>
+              <span class="language-percent">58.64%</span>
             </li>
   
             <li style="animation-delay: 200ms;">
@@ -171,7 +173,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">TypeScript</span>
-              <span class="language-percent">17.73%</span>
+              <span class="language-percent">17.71%</span>
             </li>
   
             <li style="animation-delay: 300ms;">
@@ -179,7 +181,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">Gherkin</span>
-              <span class="language-percent">7.67%</span>
+              <span class="language-percent">7.66%</span>
             </li>
   
             <li style="animation-delay: 400ms;">
@@ -195,7 +197,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">HTML</span>
-              <span class="language-percent">3.09%</span>
+              <span class="language-percent">3.08%</span>
             </li>
   
             <li style="animation-delay: 600ms;">
@@ -203,7 +205,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">Python</span>
-              <span class="language-percent">2.93%</span>
+              <span class="language-percent">2.94%</span>
             </li>
   
             <li style="animation-delay: 700ms;">
@@ -251,7 +253,7 @@
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
               <span class="language-name">Shell</span>
-              <span class="language-percent">0.19%</span>
+              <span class="language-percent">0.22%</span>
             </li>
   
             <li style="animation-delay: 1300ms;">
@@ -335,6 +337,14 @@
             </li>
   
             <li style="animation-delay: 2300ms;">
+              <svg xmlns="http://www.w3.org/2000/svg" class="language-item" style="fill:#a52a22;" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              <span class="language-name">Jinja</span>
+              <span class="language-percent">0.00%</span>
+            </li>
+  
+            <li style="animation-delay: 2400ms;">
               <svg xmlns="http://www.w3.org/2000/svg" class="language-item" style="fill:#6a40fd;" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
@@ -342,7 +352,7 @@
               <span class="language-percent">0.00%</span>
             </li>
   
-            <li style="animation-delay: 2400ms;">
+            <li style="animation-delay: 2500ms;">
               <svg xmlns="http://www.w3.org/2000/svg" class="language-item" style="fill:#C1F12E;" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
@@ -350,7 +360,7 @@
               <span class="language-percent">0.00%</span>
             </li>
   
-            <li style="animation-delay: 2500ms;">
+            <li style="animation-delay: 2600ms;">
               <svg xmlns="http://www.w3.org/2000/svg" class="language-item" style="fill:#596706;" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
               </svg>
